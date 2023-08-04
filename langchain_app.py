@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit_toggle as tog
-import pandas as pd
+
 
 from langchain.callbacks import StreamlitCallbackHandler
 
@@ -99,8 +99,6 @@ def generate_summary(docsearch, API_KEY):
         st.markdown(authors)
         st.markdown('## Summary:')
         st.markdown(summary)
-        # summary_df = pd.DataFrame(output_dict, index=[0])
-        # return st.table(summary_df)
     except:
         print(response)
         st.error("Cannot generate summary")
