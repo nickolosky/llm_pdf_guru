@@ -1,5 +1,5 @@
 import streamlit as st
-import streamlit_toggle as tog
+# import streamlit_toggle as tog
 
 
 from langchain.callbacks import StreamlitCallbackHandler
@@ -166,15 +166,15 @@ st.markdown('#')
 
 st.markdown('## Response 🗣️')
 
-# Use callback option
-use_call_backs = tog.st_toggle_switch(label="Display callbacks", 
-                    key="Display callbacks", 
-                    default_value=False, 
-                    label_after = False, 
-                    inactive_color = '#D3D3D3', 
-                    active_color="#11567f", 
-                    track_color="#29B5E8"
-                    )
+# # Use callback option
+# use_call_backs = tog.st_toggle_switch(label="Display callbacks", 
+#                     key="Display callbacks", 
+#                     default_value=False, 
+#                     label_after = False, 
+#                     inactive_color = '#D3D3D3', 
+#                     active_color="#11567f", 
+#                     track_color="#29B5E8"
+#                     )
 
 generate_response(docsearch, query_text, API_KEY)
 
